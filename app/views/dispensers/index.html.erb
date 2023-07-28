@@ -1,0 +1,11 @@
+<p style="color: green"><%= notice %></p>
+<h1>Dispensers</h1>
+<div id="dispensers">
+  <% @dispensers.each do |dispenser| %>
+    <%= render dispenser %>
+    <p>
+      <%= link_to "Show this dispenser", dispenser, class:"btn btn-primary" %>
+    </p>
+  <% end %>
+</div>
+<%= link_to "New dispenser", new_dispenser_path, class: "btn btn-success" %>

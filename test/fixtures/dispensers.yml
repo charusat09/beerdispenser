@@ -1,0 +1,17 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  flow_volume: 1.5
+  status: MyString
+  last_opened_at: 2023-07-27 18:20:47
+  last_closed_at: 2023-07-27 18:20:47
+  total_revenue: 1.5
+  price_per_liter: 1.5
+
+two:
+  flow_volume: 1.5
+  status: MyString
+  last_opened_at: 2023-07-27 18:20:47
+  last_closed_at: 2023-07-27 18:20:47
+  total_revenue: 1.5
+  price_per_liter: 1.5

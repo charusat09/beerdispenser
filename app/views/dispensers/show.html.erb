@@ -1,0 +1,8 @@
+<p style="color: green"><%= notice %></p>
+<%= render @dispenser %>
+<div>
+  <%= link_to "Edit this dispenser", edit_dispenser_path(@dispenser), class: "btn btn-primary" %> |
+  <%= link_to "Back to dispensers", dispensers_path, class: "btn btn-secondary" %>
+  <hr>
+  <%= button_to "Destroy this dispenser", @dispenser, method: :delete, class: "btn btn-danger" %>
+</div>

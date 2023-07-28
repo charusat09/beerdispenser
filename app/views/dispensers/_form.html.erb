@@ -1,0 +1,47 @@
+<%= form_with(model: dispenser, class: "form-horizontal") do |form| %>
+  <% if dispenser.errors.any? %>
+    <div class="alert alert-danger">
+      <h2><%= pluralize(dispenser.errors.count, "error") %> prohibited this dispenser from being saved:</h2>
+      <ul>
+        <% dispenser.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group row">
+      <div class="col-4">
+        <%= form.label :flow_volume, class: "control-label" %>
+        <%= form.text_field :flow_volume, class: "form-control", id: "dispenser_flow_volume" %>
+      </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-4">
+      <%= form.label :status, class: "control-label" %>
+      <%= form.text_field :status, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-4">
+      <%= form.label :total_revenue, class: "control-label" %>
+      <%= form.text_field :total_revenue, class: "form-control" %>
+    </div>
+  </div>
+
+  <div class="form-group row">
+    <div class="col-4">
+      <%= form.label :price_per_liter, class: "control-label" %>
+      <%= form.text_field :price_per_liter, class: "form-control" %>
+    </div>
+  </div>
+
+  <br>
+  <div class="form-group row">
+    <div class="col-4">
+      <%= form.submit class: "btn btn-success" %>
+    </div>
+  </div>
+<% end %>
